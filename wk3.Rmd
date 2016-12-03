@@ -1,0 +1,14 @@
+---
+title: "Plotly Example"
+date: "3 December 2016"
+output: ioslides_presentation
+---
+
+## Plotly Slide
+
+```{r, warning=FALSE, message=FALSE}
+library(plotly)
+plot_ly(mtcars, x=mtcars$wt, y = mtcars$mpg, mode = "markers", 
+        color = as.factor(mtcars$gear), size=mtcars$cyl)
+```
+
